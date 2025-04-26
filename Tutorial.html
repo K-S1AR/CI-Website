@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.cdnfonts.com/css/aeogo-pixellated" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jetbrains-mono-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/orbitron" rel="stylesheet">
+                
+</head>
+<body>
+    <video id="bg" autoplay loop muted>
+        <source src="vid3.webp" type="video/mp4">
+    </video>
+    <div class="heading">
+        <img src="pyth.png" width="100px" height="110px">
+        <h4 id="hh4">Turtle Graphics <br>Python <span id="py" >Tutorial</span></h4>
+    </div>
+
+    <div class="main">
+        <p>Start by Importing the turtle Module<br>Whith the <span class="cmds">imort turtle</span> Command</p>
+        <img src="imp.png" width="300px" style="margin-left: auto;">
+
+        <p>Move the turtle forward<br>With the <span class="cmds">turtle.forward([pixels])</span> command</p>
+        <video src="screenrec2.mp4" width="300px" controls style="margin-left: auto;"></video>
+
+        <p>Move the turtle backward<br>With the <span class="cmds">turtle.backward([pixels])</span> command</p>
+        <video src="screenrec3.mp4" width="300px" controls style="margin-left: auto;"></video>
+
+        <p>Turn left or right by [x] degrees<br>With the <span class="cmds">turtle.{left/right}(x)</span> command</p>
+        <video src="screenrec5.mp4" width="300px" controls style="margin-left: auto;" autoplay ></video>
+
+        <p> <span class="cmds">turtle.penup()</span> Restricts the turtle from drawing when moving</p>
+        <video src="screenrec6.mp4" width="300px" controls style="margin-left: auto; margin-bottom: 0px;" autoplay></video>
+
+        <p>draw a circle with the <span class="cmds">turtle.circle([radius],[degrees])</span> command </p>
+        <video src="screenrec7.mp4" width="300px" controls style="margin-left: auto; margin-top: 0px;" autoplay></video>
+
+        <p>A shortcut to starting cords and direction is the <span class="cmds">turtle.home()</span> command </p>
+        <img src="screencer1.png" width="300px" style="margin-left: auto;">
+        
+        <p>Change the Turtle's pencolor with the <span class="cmds">turtle.color("[color]")</span></p>
+        <img src="screencer2.png" width="300px" style="margin-left: auto;">
+
+        <p style="font-size: 20px; line-height: 2.5;">Fill a shosen shape with the <span class="cmds">turtle.begin_fill()</span>{initially} & <span class="cmds">turtle.end_fill()</span>{finally} commands</p>
+        <img src="screencer3.png" width="300px" style="margin-left: auto;">
+        <p>Change the full background canvas color with the <span class="cmds">turtle.bgcolor("[color]")</span></p>
+    </div>
+    <a href="https://codenow.co.za/" target="_blank" style="color: black;"><h1>Code Now!</h1></a>
+    <style>
+        body {
+            cursor: default;
+            background-color: rgb(20, 20, 20);
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Aeogo Pixellated', sans-serif;
+            margin-bottom: 1400px;
+            padding-right: 2px;
+            padding-left: 2px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-shadow: 0 2px 3px rgba(0, 0, 100, 0.8);
+            background-color: bl;
+        }
+
+        #hh4 {
+            font-size: 30px;
+            margin-top: 15px;
+            line-height: 1.5;
+            color: darkgrey;
+        }
+
+        #py {
+            text-decoration: underline 2px;
+            cursor: pointer;
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            line-height: 2;
+            font-size: 25px;
+            color: lightgrey;
+            text-shadow: 1px 1px 2px darkgrey;
+            row-gap: 10px;
+            background-color: rgba(50, 50, 50, 0.8);
+            padding-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            
+        }
+
+        .cmds {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: rgba(100, 100, 100, 0.3);
+            border-radius: 3px;
+        }
+
+        p {
+            border-bottom: 2px solid white;
+        }
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: blur(10px);
+        }
+        h1 {
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 40px;
+            text-shadow: 2px 2px 5px deepskyblue;
+            text-decoration: underline;
+        }
+
+    </style>
+    <script>
+        var video = document.getElementById('bg');
+        video.playbackRate = 0.5; 
+    </script>
+
+</body>
+</html>
